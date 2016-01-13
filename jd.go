@@ -38,7 +38,7 @@ func J2YMD(d int) (int, int, int) {
 func ToNumber(date string) (int, error) {
   d := strings.FieldsFunc(date, unicode.IsPunct)
   if len(d) != 3 {
-    return 0, errors.New("Expected 3 mark punctuation delimited fields, got")
+    return 0, errors.New("Expected 3 punctuation delimited fields.")
   }
   i, ei := strconv.Atoi(d[0])
   j, ej := strconv.Atoi(d[1])
