@@ -9,6 +9,8 @@ import (
   "time"
 )
 
+const VERSION = "0.0.1"
+
 // jd.YMD2J(2006, 1, 2) == 2453738 //=> true
 func YMD2J(i, j, k int) int {
   return k - 32075 +
